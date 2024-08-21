@@ -1,0 +1,16 @@
+{
+    title : "파일 다루기",
+    contents : "노드의 파일시스템은 동기식 IO와 비동기식 IO를  함께 제공
+Sync : 동기식 IO방식에 붙는다.
+파일을 읽고 쓰는 대표적인 4가지 메소드
+readFile(filename, [encoding], [callback]) : 비동기식 IO파일을 읽어 들입니다.
+readFileSync(filename, [encoding]) : 동기식 IO파일을 읽어 들입니다.
+writeFile(filename, data, encoding='utf8', [callback]) : 비동기식 IO파일을 씁니다.
+writeFileSync(filename, data, encoding='utf8') : 동기식 IO파일을 씁니다.",
+    carList : [
+         {"no":1, "name":"Sonata", "year": 2008, "price": 1800},
+        {"no":1, "name":"Grandeur", "yea"r: 2018, "price": 3800}
+    ]
+}
+
+
