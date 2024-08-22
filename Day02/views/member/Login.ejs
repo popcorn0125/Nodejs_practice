@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <%-include('../inc/Top.ejs') %>
+    <hr />
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <td><input type="text" name="id"></td>
+                    <td rowspan="2">
+                        <a href="" class="btn btn-primary">로그인</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pass</th>
+                    <td><input type="password" name="password"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
