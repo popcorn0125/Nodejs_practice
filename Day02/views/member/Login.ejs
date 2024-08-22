@@ -11,7 +11,7 @@
     <div class="container">
         <h2>Login</h2>
         <form action="/login" method="post">
-            <table class="table">
+            <table>
                 <tr>
                     <th>ID</th>
                     <td><input type="text" name="id" value="user"></td>
@@ -26,5 +26,10 @@
             </table>
         </form>
     </div>
+    <script>
+        const cookieData = decodeURIComponent(document.cookie);
+        const cookieObj = JSON.parse(cookieData.split("j:")[1]);
+        console.log(cookieObj)
+    </script>
 </body>
 </html>
