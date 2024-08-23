@@ -33,6 +33,25 @@
                     <th>COMPANY</th>
                     <td><%=car.company %></td>
                 </tr>
+                <tr>
+                    <th>PHOTO</th>
+                    <td>
+                        <%
+                        car.photos.forEach((photo) => { 
+                        %>
+                            <img width="200" src="../uploads/<%=photo.filename %>" alt="<%=photo.originalname %>" >
+                        <%
+                        }); 
+                        %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>작성일</th>
+                    <td>
+                        <%=car.writedate %>
+                    </td>
+                </tr>
+                
             </table>
             <hr />
             <a href="/shop/modify?_id=<%=car._id%>">수정</a> |

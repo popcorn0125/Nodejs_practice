@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 // 외부 접속 가능하도록 static 설정.
 app.use(express.static('public'));
-app.use(express.static('upload'));
+app.use(express.static('uploads'));
 
 // multer 업로드 설정
 // multer 미들웨어 사용: 미들웨어 사용 순서 

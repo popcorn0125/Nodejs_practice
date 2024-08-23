@@ -13,6 +13,7 @@
         <table class="table">
             <tr>
                 <th>ID</th>
+                <th>IMAGE</th>
                 <th>NAME</th>
                 <th>PRICE</th>
                 <th>YEAR</th>
@@ -23,9 +24,11 @@
         %>
             <tr>
                 <td><%=car._id %></td>
+                <td><img width="50" src="../uploads/<%=car.photos[0].filename %>" alt=""></td>
                 <td><a href="/shop/detail?_id=<%=car._id %>"><%=car.name %></a></td>
                 <td><%=car.price %></td>
                 <td><%=car.year %></td>
+                <td><%=car.company %></td>
             </tr>
         <%
             })
