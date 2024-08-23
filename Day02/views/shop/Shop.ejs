@@ -10,6 +10,27 @@
     <hr />
     <div class="container">
         <h2>상품 목록</h2>
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>YEAR</th>
+                <th>COMPANY</th>
+            </tr>
+        <%
+            carList.forEach((car)=> {
+        %>
+            <tr>
+                <td><%=car._id %></td>
+                <td><a href="/shop/detail?_id=<%=car._id %>"><%=car.name %></a></td>
+                <td><%=car.price %></td>
+                <td><%=car.year %></td>
+            </tr>
+        <%
+            })
+        %>
+        </table>
         <hr />
         <%-include('./ShopNav.ejs') %>
     </div>

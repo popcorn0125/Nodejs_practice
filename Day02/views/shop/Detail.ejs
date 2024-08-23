@@ -12,7 +12,31 @@
         <hr />
         <div class="container">
             <h2>상품 상세 보기</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <td><%=car._id %></td>
+                </tr>
+                <tr>
+                    <th>NAME</th>
+                    <td><%=car.name %></td>
+                </tr>
+                <tr>
+                    <th>PRICE</th>
+                    <td><%=car.price %></td>
+                </tr>
+                <tr>
+                    <th>YEAR</th>
+                    <td><%=car.year %></td>
+                </tr>
+                <tr>
+                    <th>COMPANY</th>
+                    <td><%=car.company %></td>
+                </tr>
+            </table>
             <hr />
+            <a href="/shop/modify?_id=<%=car._id%>">수정</a> |
+            <a href="/shop/modify?_id=<%=car._id%>">삭제</a> |
             <%-include('./ShopNav.ejs') %>
         </div>
 
